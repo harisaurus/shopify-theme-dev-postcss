@@ -11,7 +11,7 @@ gulp.task('style', function () {
     autoprefixer,
     postcss_shopify_settings_variables
   ]
-  return gulp.src('./src/main.css')
+  return gulp.src('./src/style.css')
     .pipe(postcss(processors))
     .pipe(rename(function (path) {
       path.extname = '.css.liquid'
