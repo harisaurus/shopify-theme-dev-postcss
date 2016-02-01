@@ -7,7 +7,7 @@ Gulp + PostCSS build setup for Shopify theme development
 - `npm run gulp` runs build process
 
 ## Build Process
-- gulp looks at `style.css`
+- gulp looks at `src/style.css`
 - `postcss-partial-import` imports partials
 - `autoprefixer` adds any required prefixes
 - `postcss_shopify_settings_variables` converts variables to liquid-style variables. ie `$(headline_color)` becomes `{{ settings.headline_color }}`
