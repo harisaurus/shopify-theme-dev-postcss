@@ -1,4 +1,5 @@
 var gulp = require('gulp')
+var rename = require('gulp-rename')
 var postcss = require('gulp-postcss')
 var autoprefixer = require('autoprefixer')
 var postcss_partial_import = require('postcss-partial-import')
@@ -10,7 +11,10 @@ gulp.task('style', function () {
     autoprefixer,
     postcss_shopify_settings_variables
   ]
-  return gulp.src('./src/*.css')
+  return gulp.src('./src/main.css')
     .pipe(postcss(processors))
+    .pipe(rename(function (path) {
+      path.extname = '.css.liquid'
+    }))
     .pipe(gulp.dest('./assets'))
 })

@@ -12,6 +12,7 @@
     "autoprefixer": "^6.3.1",
     "gulp": "^3.9.0",
     "gulp-postcss": "^6.0.1",
+    "gulp-rename": "^1.2.2",
     "postcss-partial-import": "^1.3.0",
     "postcss-shopify-settings-variables": "^0.1.4"
   }
