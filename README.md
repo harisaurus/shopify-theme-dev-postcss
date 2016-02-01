@@ -1,7 +1,12 @@
 # shopify-theme-dev-postcss
 Gulp + PostCSS build setup for Shopify theme development
 
-- `./node_modules/.bin/gulp style` runs build process (TODO: set as default, set watch)
+## Setup
+- clone repo
+- run `npm install` to install modules
+- `npm run gulp` runs build process
+
+## Build Process
 - gulp looks at `style.css`
 - `postcss-partial-import` imports partials
 - `autoprefixer` adds any required prefixes

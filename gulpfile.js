@@ -18,3 +18,5 @@ gulp.task('style', function () {
     }))
     .pipe(gulp.dest('./assets'))
 })
+
+gulp.task('default',['style']);
