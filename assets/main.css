@@ -1,0 +1,16 @@
+.partial {
+  color: red;
+}
+
+.autoprefixer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: {{ settings.headline_color }};
+  font-family: {{ settings.regular_websafe_font | replace: '+', ' ' }};
+  font-size: {{ settings.regular_font_size }}px;
+  border: 1px solid {{ settings.border_color }};
+  background: rgba({{ settings.settings.header_bg_color }}, 0.9);
+  background: url({{ "logo.png" | asset_url }});
+}

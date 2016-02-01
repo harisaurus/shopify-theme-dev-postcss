@@ -1,0 +1,11 @@
+@import "partial";
+
+.autoprefixer {
+  display: flex;
+  color: $(headline_color);
+  font-family: $(regular_websafe_font | replace: '+', ' ');
+  font-size: $(regular_font_size)px;
+  border: 1px solid $(border_color);
+  background: rgba($(settings.header_bg_color), 0.9);
+  background: url(logo.png);
+}
